@@ -309,4 +309,17 @@ h2 {
   .aboutMe {
     margin: 0;
   }
+
+  body {
+    overflow-y: hidden;
+  }
+
+  .header {
+    margin-top: 20%;
+    height: 150vh;
+  }
+
+  .card-image img {
+    object-fit: contain;
+  }
 }
