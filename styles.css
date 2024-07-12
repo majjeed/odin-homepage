@@ -251,3 +251,62 @@ h6 {
 h2 {
   font-size: 50px;
 }
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+@media (max-width: 1100px) {
+  .img-wrapper h1 {
+    font-size: 48px;
+  }
+
+  .aboutMe {
+    margin: auto;
+  }
+
+  .footer .wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-icons.social-icons {
+    justify-content: center;
+  }
+
+  .footer .img-wrapper {
+    width: calc(100vw - 40px);
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .header .wrapper {
+    display: block;
+  }
+
+  .header .img-wrapper {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+  }
+  .aboutMe {
+    width: min(100vw - 40px, 650px);
+  }
+}
+
+@media (max-width: 800px) {
+  .header .wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aboutMe {
+    margin: 0;
+  }
+}
